@@ -1,8 +1,8 @@
 // 日常更新只需修改这个文件；空链接会显示“待补充”，不会产生无效跳转。
 // 所有文本按纯文本渲染，不需要编写 HTML。
 window.PROFILE = {
-  name: '你的姓名',
-  englishName: 'Your Name',
+  name: '徐鹏程',
+  englishName: 'Pengcheng Xu',
   role: '你的职位 / 学校或研究机构 · 待填写',
   photo: '', // 例如 'assets/portrait.jpg'
   monogram: 'YN',
