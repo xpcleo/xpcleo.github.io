@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="个人学术主页占位版：研究方向、代表论文与个人经历。">
+  <title>你的姓名 · Research & Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="profile.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳转到正文</a>
+<div class="demo-notice">预览模板 · 姓名、经历和论文均为占位内容，尚未填入真实个人资料。</div>
+<header class="masthead">
+  <a class="wordmark" href="#about">RESEARCH / PRACTICE</a>
+  <span class="edition">PERSONAL WEBSITE</span>
+</header>
+<div class="layout">
+  <aside class="rail">
+    <div class="rail-title">ON THIS PAGE</div>
+    <nav aria-label="页面章节">
+      <a href="#about"><span>01</span>个人介绍</a>
+      <a href="#publications"><span>02</span>代表论文</a>
+      <a href="#experience"><span>03</span>个人经历</a>
+      <a href="#projects"><span>04</span>研究项目</a>
+      <a href="#updates"><span>05</span>最新动态</a>
+      <a href="#contact"><span>06</span>联系方式</a>
+    </nav>
+    <p class="rail-note">A small place for<br>ideas, work & progress.</p>
+    <button class="print-button" type="button" onclick="window.print()">打印 / 保存为 PDF</button>
+  </aside>
+  <main id="main">
+    <section id="about" class="hero">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow">RESEARCHER / ENGINEER</p>
+          <h1 id="profile-name">你的姓名</h1>
+          <p id="profile-english" class="english-name">Your Name</p>
+          <p id="profile-role" class="role">职位 / 学校或研究机构 · 待填写</p>
+        </div>
+        <div id="portrait" class="portrait" role="img" aria-label="个人照片占位图"><span class="portrait-monogram">YN</span><span class="portrait-label">PHOTO / 待替换</span></div>
+      </div>
+      <div id="profile-bio" class="bio"><p>这里填写你的个人介绍。</p></div>
+      <div id="interests" class="interests" aria-label="研究方向"></div>
+      <div id="profile-links" class="link-row"></div>
+    </section>
+    <section id="publications">
+      <div class="section-heading"><h2><span class="section-no">02 /</span> Selected publications</h2><p>代表论文</p></div>
+      <div class="publication-controls"><div class="filters" role="group" aria-label="筛选论文">
+        <button type="button" class="selected" data-filter="all" aria-pressed="true">全部</button>
+        <button type="button" data-filter="selected" aria-pressed="false">代表作</button>
+        <button type="button" data-filter="preprint" aria-pressed="false">预印本</button>
+      </div><span id="paper-count" role="status" aria-live="polite"></span></div>
+      <div id="papers"></div>
+      <p class="fine-note">当前条目仅演示展示格式，不代表真实发表成果。作者顺序与发表状态请按正式资料填写。</p>
+    </section>
+    <section id="experience">
+      <div class="section-heading"><h2><span class="section-no">03 /</span> Experience & education</h2><p>个人经历</p></div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+    <section id="projects">
+      <div class="section-heading"><h2><span class="section-no">04 /</span> Research in practice</h2><p>研究项目</p></div>
+      <div id="project-list"></div>
+    </section>
+    <section id="updates">
+      <div class="section-heading"><h2><span class="section-no">05 /</span> Notes & updates</h2><p>最新动态</p></div>
+      <div id="news-list"></div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="section-heading"><h2><span class="section-no">06 /</span> Get in touch</h2><p>联系方式</p></div>
+      <p>对我的研究感兴趣，或希望交流合作？欢迎通过以下方式联系。</p>
+      <div id="contact-links" class="link-row"></div>
+    </section>
+    <footer><span id="footer-name">你的姓名 · 个人主页</span><a href="#about">返回顶部 ↑</a></footer>
+    <noscript><p>完整内容需要启用 JavaScript。个人资料保存在 profile.js 中。</p></noscript>
+  </main>
+</div>
+</body>
+</html>
